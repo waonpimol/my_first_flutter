@@ -13,42 +13,43 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     // เมธอด build() ส่งคืนโครงสร้างต้นไม้วิดเจ็ตสำหรับวิดเจ็ตนี้
     return MaterialApp(
+      title: 'My Awesome App',
+      debugShowCheckedModeBanner: false, // ซ่อนแบนเนอร์ debug
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.lightBlue)
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        useMaterial3: true, // ใช้ Material Design เวอร์ชันล่าสุด
       ),
-      title: 'Flutter Demo',
-      home: const MyHomePage(), // โครงสร้างหน้าจอพื้นฐาน
+      home: const MyHomePage(), // วิดเจ็ตหน้าจอหลักของคุณ
     );
   }
 }
-
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({super.key});
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold( // ให้โครงสร้างแอปพื้นฐาน
+    return Scaffold(
+      // ให้โครงสร้างแอปพื้นฐาน
       appBar: AppBar(
-        title: const Text('Chapter 3 Lab'),
-        backgroundColor: Colors.teal, // ปรับแต่งสี AppBar
+        title: const Text('Home Page'),
+        backgroundColor: Colors.blue, // ปรับแต่งสี AppBar
       ),
-      body: Center( // พื้นที่เนื้อหาหลัก
-        child: Container (
+      body: Center(
+        // พื้นที่เนื้อหาหลัก
+        child: Container(
           width: 300.0,
-          height: 200.0,
-          padding: const EdgeInsets.all(16.0),
+          height: 150.0,
+          padding: EdgeInsets.all(10.0),
           decoration: BoxDecoration(
             color: Colors.amber,
-            borderRadius: BorderRadius.circular(10.0)
+            borderRadius: BorderRadius.circular(10.0),
           ),
-          child: const Text(
-            'Hello Flutter Widgets!',
-            textAlign: TextAlign.center,
-            style: TextStyle(
-              fontSize: 20.0,
-              fontWeight: FontWeight.bold,
-              color: Colors.black87
+          child: Center(
+            child: Image.asset('assets/images/michael-sum-LEpfefQf4rU-unsplash.jpg',
+              width: 100,
+              height: 50,
+              fit: BoxFit.cover,
             ),
           ),
         ),
