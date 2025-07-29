@@ -56,12 +56,8 @@ flutter:
   # included with your application, so that you can use the icons in
   # the material Icons class.
   uses-material-design: true
-
-  # To add assets to your application, add an assets section, like this:
- # หากต้องการเพิ่ม assets ให้กับแอปพลิเคชันของคุณ ให้เพิ่มส่วน assets ดังนี้:
   assets:
-    - 'assets/images/michael-sum-LEpfefQf4rU-unsplash.jpg'
-    # - assets/icons/ # ตัวอย่างอื่นของการประกาศโฟลเดอร์
+    - assets\cata.jpg
 
 
 

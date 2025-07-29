@@ -46,7 +46,7 @@ class MyHomePage extends StatelessWidget {
             borderRadius: BorderRadius.circular(10.0),
           ),
           child: Center(
-            child: Image.asset('assets/images/michael-sum-LEpfefQf4rU-unsplash.jpg',
+            child: Image.asset('assets/cata.jpg',
               width: 100,
               height: 50,
               fit: BoxFit.cover,
